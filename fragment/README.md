@@ -97,18 +97,18 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
     ```
 
 1. Implement the Interface in the Activity Class
-```java
-public class MainActivity extends AppCompatActivity implements FirstFragment.OnSelectedListener {
+    ```java
+    public class MainActivity extends AppCompatActivity implements FirstFragment.OnSelectedListener {
 
-    ......
+        ......
 
-    @Override
-    public void onSelected(String msg) {
-        TextView my_text = (TextView) findViewById(R.id.my_text);
-        my_text.setText(msg);
+        @Override
+        public void onSelected(String msg) {
+            TextView my_text = (TextView) findViewById(R.id.my_text);
+            my_text.setText(msg);
+        }
     }
-}
-```
+    ```
 
 1. Get the ```OnSelectedListener``` object in Fragment class
     ```java
@@ -174,6 +174,8 @@ public class MainActivity extends AppCompatActivity implements FirstFragment.OnS
 1. [ListFragment](https://developer.android.com/reference/android/app/ListFragment.html)
 1. [PreferenceFragment](https://developer.android.com/reference/android/preference/PreferenceFragment.html)
 1. [WebViewFragment](https://developer.android.com/reference/android/webkit/WebViewFragment.html)
+
+#### [Creating Tab with Fragment and ViewPager](https://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts/18413437#18413437)
 
 ### Links
 * [Replace One Fragment with Another](https://developer.android.com/training/basics/fragments/fragment-ui.html#Replace)
