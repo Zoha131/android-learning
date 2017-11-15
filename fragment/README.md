@@ -24,17 +24,6 @@
     </LinearLayout>
     ```
 
-1. Add *FrameLayout* to the ContentView of the Activity Class and give an id
-
-    ```xml
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:id="@+id/myfirstfragment"/>
-    ```
-
-
 1. Create a subclass of ```Fragment``` and override the ```onCreateView``` method
 
     ```java
@@ -50,6 +39,16 @@
         }
     }
     ```
+
+    1. Add *FrameLayout* to the ContentView of the Activity Class and give an id
+
+        ```xml
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:id="@+id/myfirstfragment"/>
+        ```
 
 1. Add the object of ```FirstFragment``` to the Activity class
 
