@@ -175,8 +175,14 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
 1. [PreferenceFragment](https://developer.android.com/reference/android/preference/PreferenceFragment.html)
 1. [WebViewFragment](https://developer.android.com/reference/android/webkit/WebViewFragment.html)
 
-#### [Creating Tab with Fragment and ViewPager](https://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts/18413437#18413437)
+
+#### Tabs and viewpager
+* [Creating Tab with Fragment and ViewPager](https://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts/18413437#18413437)
+* [Tabs using **TabLayout** of Design Support Library](https://github.com/codepath/android_guides/wiki/Google-Play-Style-Tabs-using-TabLayout)
+    * [The TabLaout should be inside of ViewPager](https://developer.android.com/reference/android/support/design/widget/TabLayout.html)
+* [Tabs using **PagerTitleStrip**](https://developer.android.com/training/implementing-navigation/lateral.html)
 
 ### Links
 * [Replace One Fragment with Another](https://developer.android.com/training/basics/fragments/fragment-ui.html#Replace)
 * [Fragments](https://developer.android.com/guide/components/fragments.html)
+* [Fragment Tutorial](https://github.com/codepath/android_guides/wiki#fragments)
