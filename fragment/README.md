@@ -176,6 +176,21 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
 1. [WebViewFragment](https://developer.android.com/reference/android/webkit/WebViewFragment.html)
 
 
+#### Basic ViewPager
+1. Create Fragment Classes
+1. Ceate adapter for ViewPager
+    * extends any of followings PagerAdapter, FragmentPagerAdapter, FragmentStatePagerAdapter
+    * override following methods
+        * ```public Fragment getItem(int pos)```
+        * ``` public int getCount()```
+        * ```public CharSequence getPageTitle(int position)```
+1. Add ```ViewPager``` in the Layout file of Activity class
+1. Add ```TabLayout``` of Design Support Library inside the ```ViewPager``` and set layout_gravity=Top
+1. Or add ```PagerTitleStrip``` of Support Library inside the ```ViewPager``` and set layout_gravity=Top
+1. In the activity class find the ViewPager and set adapter to it.
+1. Enjoy....
+
+
 #### Tabs and viewpager
 * [Creating Tab with Fragment and ViewPager](https://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts/18413437#18413437)
 * [Tabs using **TabLayout** of Design Support Library](https://github.com/codepath/android_guides/wiki/Google-Play-Style-Tabs-using-TabLayout)
