@@ -9,6 +9,15 @@
     5. Create a RecyclerView.Adapter and ViewHolder to render the item
     6. Bind the adapter to the data source to populate the RecyclerView
 
+* Implementing Different Layout for recycleview
+    1. create multiple layout file
+    1. create a parent ViewHolder class and add a variable to store *type* and a method to get the *type*
+    1. create multiple subclass of the parent ViewHolder class in the Adapter class
+    1. override ```getItemViewType(int position)``` method in Adapter class
+    1. in the ```onCreateViewHolder(ViewGroup parent, int viewType)``` method make use of ```viewType``` variable when returning ViewHolder and stor the ```viewType``` in the ViewHolder class
+    1. in the ```onBindViewHolder(ViewHolder holder, int position)``` method Bind the appropriate views according to the type of the ViewHolder
+    1. Now you have multiple types of row in a single recycleview. enjoy...... :thumbsup:  
+
 
 * Different types of Layout Manager
     * [LinearLayoutManager](https://developer.android.com/reference/android/support/v7/widget/LinearLayoutManager.html)

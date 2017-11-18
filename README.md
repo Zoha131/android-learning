@@ -8,6 +8,7 @@ In this repo I am going to store my notes about android-sdk
 1. [ViewPager(Tabs)](fragment/#basic-viewpager)
 1. [ListView](listview/)
 1. [RecycleView](recycleview/)
+1. [Thread](thread/)
 
 
 ## [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
