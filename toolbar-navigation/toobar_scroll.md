@@ -214,3 +214,4 @@ To have this type of animation do the followings:
 * [Handling Scrolls with CoordinatorLayout](https://github.com/codepath/android_guides/wiki/Handling-Scrolls-with-CoordinatorLayout)
 * [Mastering the Coordinator Layout](http://saulmm.github.io/mastering-coordinator)
 * [Android design library CoordinatorLayout, AppBarLayout and DrawerLayout](https://stackoverflow.com/questions/30719369/android-design-library-coordinatorlayout-appbarlayout-and-drawerlayout)
+* [Floating-Action-Buttons](https://guides.codepath.com/android/Floating-Action-Buttons)
