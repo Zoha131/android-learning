@@ -187,6 +187,8 @@ We are going to build this type of animation. To do this we have to follow the f
 1. Now you have you desired animation. enjoy...... :smile:
 
 
+##### Little bit Different Animation
+
 
 ![CollapsingToolbarLayout Animation Special](../images/collapsingToolbar_sp1.gif)
 
@@ -204,3 +206,10 @@ To have this type of animation do the followings:
             ......
 
     ```
+
+
+
+
+## Links
+* [Handling Scrolls with CoordinatorLayout](https://github.com/codepath/android_guides/wiki/Handling-Scrolls-with-CoordinatorLayout)
+* [Mastering the Coordinator Layout](http://saulmm.github.io/mastering-coordinator)

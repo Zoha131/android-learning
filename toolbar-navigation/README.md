@@ -3,6 +3,10 @@
     1. Using Toolbar as ActionBar
     2. Using stand-alone Toolbar
 
+## Toolbar
+* [App Bar](https://developer.android.com/training/appbar/index.html)
+* [Using-the-App-Toolbar](https://github.com/codepath/android_guides/wiki/Using-the-App-Toolbar)
+
 #### Basic Steps to Create a Navigation Drawer
 1. Make sure you have this Gradle dependency added to your app/build.gradle file:
     ```java
@@ -202,11 +206,6 @@
         ```
     2. If you get error using Lambda Expression follow this [link](https://developer.android.com/studio/write/java8-support.html)
     3. ```Limitations```: The current version of the design support library does come with its limitations. The main issue is with the system that highlights the current item in the navigation menu. The itemBackground attribute for the NavigationView does not handle the checked state of the item correctly: somehow either all items are highlighted or none of them are. This makes this attribute basically unusable for most apps.
-
-
-## Toolbar
-* [App Bar](https://developer.android.com/training/appbar/index.html)
-* [Using-the-App-Toolbar](https://github.com/codepath/android_guides/wiki/Using-the-App-Toolbar)
 
 ## navigation Drawer
 * [Fragment-Navigation-Drawer](https://github.com/codepath/android_guides/wiki/Fragment-Navigation-Drawer)
