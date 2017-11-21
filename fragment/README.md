@@ -158,7 +158,7 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
 
 #### How to restore back Fragment's state
 * to store the Fragment's state you have to override ```onSaveInstanceState(Bundle outState)``` method. In this method you can store data in the *outState* bundle.
-* you can get back the data you saved from **savedInstanceState**, bundle type parameter of the method ```onCreateView(...)```.
+* you can get back the data you saved from __savedInstanceState__ , bundle type parameter of the method ```onCreateView(...)```.
 
 #### [some important methods of FragmentTransaction](https://developer.android.com/reference/android/app/FragmentTransaction.html)
 1. add
@@ -193,9 +193,10 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
 
 #### Tabs and viewpager
 * [Creating Tab with Fragment and ViewPager](https://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts/18413437#18413437)
-* [Tabs using **TabLayout** of Design Support Library](https://github.com/codepath/android_guides/wiki/Google-Play-Style-Tabs-using-TabLayout)
+* [Tabs using __TabLayout__ of Design Support Library](https://github.com/codepath/android_guides/wiki/Google-Play-Style-Tabs-using-TabLayout)
     * [The TabLaout should be inside of ViewPager](https://developer.android.com/reference/android/support/design/widget/TabLayout.html)
-* [Tabs using **PagerTitleStrip**](https://developer.android.com/training/implementing-navigation/lateral.html)
+* [Tabs using __PagerTitleStrip__](https://developer.android.com/training/implementing-navigation/lateral.html)
+* [infinite-viewpager-with-tablayout](https://stackoverflow.com/questions/40292553/infinite-viewpager-with-tablayout)
 
 ### Links
 * [Replace One Fragment with Another](https://developer.android.com/training/basics/fragments/fragment-ui.html#Replace)
