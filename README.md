@@ -26,3 +26,8 @@ In this repo I am going to store my notes about android-sdk
 ## Firebase
 
 1. Firestore
+
+
+## Resources
+
+1. [Introduction to Android(google)](https://developer.android.com/guide/index.html)
