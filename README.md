@@ -23,9 +23,10 @@ In this repo I am going to store my notes about android-sdk
 1. LiveData
 1. LifeCycle
 
+
 ## Firebase
 
-1. Firestore
+1. [Firestore](firebase/firestore.md)
 
 
 ## Resources
