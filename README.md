@@ -26,7 +26,9 @@ In this repo I am going to store my notes about android-sdk
 
 ## Firebase
 
-1. [Firestore](firebase/firestore.md)
+1. Firestore
+    1. [Working with custom Class](firebase/firestore.md)
+    1. [FirebaseUI for Cloud Firestore](https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md)
 
 
 ## Resources
