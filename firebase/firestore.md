@@ -94,6 +94,9 @@
         ```
     1. The return type or ```set()``` method is ```Task<Void>```
 
+1. __Learn More__
+    1. [Add Data to Cloud Firestore](https://firebase.google.com/docs/firestore/manage-data/add-data)
+
 ## Updating data to firestore documents using Custom Class
 
 1. You can easily update any data using a method from the model class that has ```Map<S,T>``` return type.
@@ -115,18 +118,92 @@
 1. [Query reference (CollectionReference class extends Query)](https://firebase.google.com/docs/reference/android/com/google/firebase/firestore/Query)
 1. At first create a Query object as per your need. Now call the ```get()``` method to execute the query and get the resultset. The return type of ```get()``` method is ```Task<QuerySnapshot>```
 1. you can also get all the resultset from ```CollectionReference``` and  ```DocumentReference``` class by calling theri ```get()``` method.
+1. __Note:__ to query in collection or subcollection you need to have an index for that query in cloud firestore. Instead of creating index the index manually from the firebase web console just run the query in your app and you will get an link in the logcat to create appropriate index for the query. just click the link and enjoy..... firebase will create index for you.
 
 
+## Using FirestoreUI to show the data
 
+1. FirestoreUI nothing but a exteded Adapter for RecyclerView. to use the FirebaseUI you have to create a Adapter class that extends ```FirestoreRecyclerAdapter```
+1. First create a Layout for the adapter.
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cgpa"/>
 
+    </LinearLayout>
+    ```
+1. Then create the Adapter class
+    ```java
+    public class FirestorAdapter extends FirestoreRecyclerAdapter<Student, FirestorAdapter.ViewHolder > {
 
+        public FirestorAdapter(FirestoreRecyclerOptions<Student> options) {
+            super(options);
+        }
 
+        @Override
+        protected void onBindViewHolder(FirestorAdapter.ViewHolder holder, int position, Student model) {
+            Student std = model;
+            holder.name.setText(std.getName());
+            holder.id.setText(std.getId());
+            String date = std.getDate()!= null? std.getDate().toString(): "date";
+            holder.cgpa.setText(date);
 
+        }
 
+        @Override
+        public FirestorAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.stdholder, parent, false);
+            return new ViewHolder(view);
+        }
 
+        @Override
+        public void onDataChanged() {
+            super.onDataChanged();
+            Log.e("Adapter", "data changed");
+        }
 
+        public class ViewHolder extends RecyclerView.ViewHolder {
+            TextView name, cgpa, id;
+            public ViewHolder(View itemView) {
+                super(itemView);
+                name = (TextView) itemView.findViewById(R.id.name);
+                cgpa = (TextView) itemView.findViewById(R.id.cgpa);
+                id = (TextView) itemView.findViewById(R.id.id);
+            }
+        }
+    }
+    ```
+1. In the ```onCreate``` method of activity class create ```Query``` object and ```FirestoreRecyclerOptions``` object. And finally create ```FirestorAdapter``` object then attached it to the RecyclerView. Don't forget to add LinearLayoutManager to the recyclerview.
 
-## Links
-1. [Add Data to Cloud Firestore](https://firebase.google.com/docs/firestore/manage-data/add-data)
-1. [FirebaseUI for Cloud Firestore](https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md)
+    ```java
+    Query query = db.collection("student/std2/friends").whereEqualTo("name", "moyna").orderBy("date");
+    FirestoreRecyclerOptions<Student> options = new FirestoreRecyclerOptions.Builder<Student>()
+                    .setQuery(query, Student.class)
+                    .build();
+
+    firestorAdapter = new FirestorAdapter(options);
+
+    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.myRecycler);
+    recyclerView.setAdapter(firestorAdapter);
+    recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    ```
+1. __Learn More__
+    1. [FirebaseUI for Cloud Firestore](https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md)
