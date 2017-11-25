@@ -11,9 +11,9 @@ In this repo I am going to store my notes about android-sdk
 1. [Thread](thread/)
 
 
-## Desing Support library
-1. [Design-Support-Library](https://guides.codepath.com/android/Design-Support-Library)
+## [Desing Support library](https://guides.codepath.com/android/Design-Support-Library)
 1. [My Note about CoordinatorLayout](toolbar-navigation/toolbar_scroll.md)
+1. [Working-with-the-EditText](https://github.com/codepath/android_guides/wiki/Working-with-the-EditText)
 
 
 ## [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
