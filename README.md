@@ -15,6 +15,14 @@ In this repo I am going to store my notes about android-sdk
 1. [My Note about CoordinatorLayout](toolbar-navigation/toolbar_scroll.md)
 1. [Working-with-the-EditText](https://github.com/codepath/android_guides/wiki/Working-with-the-EditText)
 
+## Animation
+1. Google Tutorial
+    1. [Adding Animations](https://developer.android.com/training/animation/index.html)
+    1. [Animation and Graphics](https://developer.android.com/guide/topics/graphics/index.html)
+1. [Transition (Youtube)](https://www.youtube.com/watch?v=5e1Yh0fSZhQ)
+1. [Material-Animations](https://github.com/lgvalle/Material-Animations)
+1. [Transition](http://mikescamell.com/shared-element-transitions-updates/)
+
 
 ## [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
 
