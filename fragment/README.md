@@ -155,6 +155,9 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
         ......
     }
     ```
+#### important things to note
+* All subclasses of Fragment must include a public no-argument constructor
+
 
 #### How to restore back Fragment's state
 * to store the Fragment's state you have to override ```onSaveInstanceState(Bundle outState)``` method. In this method you can store data in the *outState* bundle.
