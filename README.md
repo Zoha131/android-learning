@@ -9,6 +9,12 @@ In this repo I am going to store my notes about android-sdk
 1. [ListView](listview/)
 1. [RecycleView](recycleview/)
 1. [Thread](thread/)
+1. [Menus](https://www.youtube.com/watch?v=55dFyRM4Cfc&list=PLlyCyjh2pUe9wv-hU4my-Nen_SvXIzxGB&index=24)
+
+## Settings
+1. [Youtube PlayList](https://youtu.be/wY64_9Gp8_0)
+1. [Google Tutorial](https://www.youtube.com/watch?v=cahwh-7ANMk&list=PLlyCyjh2pUe9wv-hU4my-Nen_SvXIzxGB&index=57)
+1. [Developer Guid](https://developer.android.com/guide/topics/ui/settings.html)
 
 
 ## [Desing Support library](https://guides.codepath.com/android/Design-Support-Library)

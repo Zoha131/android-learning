@@ -174,6 +174,7 @@ In the parent Activity class you can call ```setArguments(Bundle args)``` method
 
 #### Some Special Types of Fragment
 1. [DialogFragment](https://developer.android.com/reference/android/app/DialogFragment.html)
+    * [Dialogs](https://developer.android.com/guide/topics/ui/dialogs.html)
 1. [ListFragment](https://developer.android.com/reference/android/app/ListFragment.html)
 1. [PreferenceFragment](https://developer.android.com/reference/android/preference/PreferenceFragment.html)
 1. [WebViewFragment](https://developer.android.com/reference/android/webkit/WebViewFragment.html)
