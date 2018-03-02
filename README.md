@@ -45,6 +45,18 @@ In this repo I am going to store my notes about android-sdk
     1. [FirebaseUI for Cloud Firestore](https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md)
 
 
+## [Contextual App Experience](https://www.youtube.com/watch?v=1a0wII96cpE)
+
+1. [Google Awareness API](https://developers.google.com/awareness/)
+    1. [Fence API](https://developers.google.com/awareness/android-api/fence-api-overview)
+    1. [Snapshot API](https://developers.google.com/awareness/android-api/snapshot-api-overview)
+1. [Nearby](https://developers.google.com/nearby/)
+    1. [Nearby Messages](https://developers.google.com/nearby/messages/overview)
+    1. [Nearby Connections](https://developers.google.com/nearby/connections/overview)
+    1. [Nearby Notifications](https://developers.google.com/nearby/notifications/overview)
+1. [Google Beacon Platform](https://developers.google.com/beacons/)
+
+
 ## Resources
 
 1. [Introduction to Android(google)](https://developer.android.com/guide/index.html)
