@@ -55,6 +55,7 @@ In this repo I am going to store my notes about android-sdk
     1. [Nearby Connections](https://developers.google.com/nearby/connections/overview)
     1. [Nearby Notifications](https://developers.google.com/nearby/notifications/overview)
 1. [Google Beacon Platform](https://developers.google.com/beacons/)
+1. [Transition API](https://developer.android.com/guide/topics/location/transitions.html)
 
 
 ## Resources
